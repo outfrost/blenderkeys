@@ -39,11 +39,14 @@ h2 {
 }
 
 p {
-	margin: 0.25em 0;
+	margin: 0.1em 0;
 }
 
 kbd {
+	margin: 0.05em 0;
 	padding: 0.15em 0.5em;
+
+	display: inline-block;
 
 	background: hsl(165, 100%, 15%);
 	border-radius: 0.125em;
@@ -62,7 +65,7 @@ main {
 	overflow-y: auto;
 }
 
-.scrolly-bitch {
+#scrolly-bitch {
 	columns: 20em auto;
 	column-gap: 2.0em;
 }
@@ -82,4 +85,13 @@ section {
 .keybind {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.keybind #label {
+	flex-shrink: 4;
+}
+
+.keybind #keys {
+	text-align: end;
 }

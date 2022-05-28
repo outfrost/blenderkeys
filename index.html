@@ -4,6 +4,7 @@
 <head>
 	<title>Blender cheat sheet</title>
 	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script src="index.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,20 @@
 
 	<main>
 
-		<div class="scrolly-bitch">
+		<div id="scrolly-bitch">
+
+			<template id="section-template">
+				<section>
+					<h2 id="section-title"></h2>
+				</section>
+			</template>
+
+			<template id="keybind-template">
+				<div class="keybind">
+					<p id="label"></p>
+					<p id="keys"></p>
+				</div>
+			</template>
 
 			<section>
 				<h2>Transform</h2>
