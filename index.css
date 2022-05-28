@@ -1,18 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
+/*	height: 100%; AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+	position: absolute; /* fuck css */
+	top: 0; /* i hate this */
+	right: 0; /* so much */
+	bottom: 0; /* you have */
+	left: 0; /* no idea */
 	margin: 0;
 	padding: 1.0em;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
 	background: hsl(165, 100%, 25%);
 	color: #ffffff;
 	font-family: "Cantarell";
-	font-size: 125%;
+	font-size: 1.25rem;
 }
 
 h1, h2, h3 {
+	margin: 0.25em 0;
+
 	font-family: "Merriweather";
-	margin: 0.5em 0 0.5em 0;
 }
 
 h1 {
+	margin-bottom: 0.5em;
+
 	font-size: 1.0em;
 }
 
@@ -20,17 +38,19 @@ h2 {
 	font-size: 1.2em;
 }
 
-.foo {
-/*	height: 100%; AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
-	position: absolute; /* fuck css */
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
+p {
+	margin: 0.25em 0;
+}
+
+kbd {
+	padding: 0.15em 0.5em;
+
+	background: hsl(165, 100%, 15%);
+	border-radius: 0.125em;
+	border-top: solid 1px hsl(165, 30%, 60%);
+	border-bottom: solid 2px #000000;
+	font-family: "Fira Mono";
+	font-size: 1.125rem;
 }
 
 header {
@@ -48,12 +68,15 @@ main {
 }
 
 section {
-	display: inline-block; /* fuck css */
-	border: solid 1px #cccccc;
 	width: 100%;
+	margin: 0.5em 0 0.5em 0;
 	box-sizing: border-box; /* fuck css */
+
+	display: inline-block; /* fuck css */
 	break-inside: avoid;
 	page-break-inside: avoid;
+
+/*	border: solid 1px #cccccc;*/
 }
 
 .keybind {
