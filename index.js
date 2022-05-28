@@ -38,7 +38,8 @@ window.onload = () => {
 				.replace(/([^+,\s])($|\s)/g, "$1</kbd>$2")
 				.replace(/,/g, ",<br />");
 
-			section_node.appendChild(keybind_node);
+			// firstElementChild because the top-level here is just the DocumentFragment
+			section_node.firstElementChild.appendChild(keybind_node);
 		}
 
 		scrolly.appendChild(section_node);
