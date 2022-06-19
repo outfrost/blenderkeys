@@ -1,6 +1,33 @@
 const content = {
 	"Viewport navigation": {
 		"Select all": "A",
+		"Select loop": "Alt",
+		"Viewport shading": "Z",
+		"Front": "Num1",
+		"Right": "Num3",
+		"Top": "Num7",
+		"Opposite": "Num9",
+		"Ortho/Perspective": "Num5",
+		"Select mode: Vertex": "1",
+		"Select mode: Edge": "2",
+		"Select mode: Face": "3",
+	},
+	"Tools": {
+		"Select": "Shift + Space B",
+		"Measure": "Shift + Space M",
+	},
+	"Object": {
+		"Add object": "Shift + A",
+	},
+	"Edit": {
+		"Fill": "F",
+		"Merge": "M",
+		"Join": "J",
+	},
+	"Transform": {
+		"Move": "G",
+		"Rotate": "R",
+		"Scale": "S",
 	},
 /*	"Liquid Satan": {
 		"Mmm, no, very unwise": "Shift + Alt + [",
