@@ -22,7 +22,8 @@ const content = {
 	"Edit": {
 		"Fill": "F",
 		"Merge": "M",
-		"Join": "J",
+		"Connect Vertex Path": "J",
+		"Bevel": "Ctrl + B",
 	},
 	"Transform": {
 		"Move": "G",
