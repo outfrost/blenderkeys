@@ -54,8 +54,7 @@ window.onload = () => {
 			let keybind_node = keybind_template.content.cloneNode(true);
 			keybind_node.getElementById("label").textContent = keybind_label;
 			keybind_node.getElementById("keys").innerHTML = keybind_keys
-				.replace(/(^|\s)([^+,\s])/g, "$1<kbd>$2")
-				.replace(/([^+,\s])($|\s)/g, "$1</kbd>$2")
+				.replace(/[^+,\s]+/g, "<kbd>$&</kbd>")
 				.replace(/,/g, ",<br />");
 
 			// firstElementChild because the top-level here is just the DocumentFragment
